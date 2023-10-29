@@ -1,0 +1,122 @@
+/* Google Font link */
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Caprasimo&family=Chicle&family=Lilita+One&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400;1,500;1,600&family=Orelega+One&family=Public+Sans:wght@200&family=Quicksand:wght@500&family=Roboto&family=Spicy+Rice&family=Varela+Round&family=Young+Serif&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    flex-direction: column;
+   
+}
+
+    body {
+        background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+
+    main {
+    height: 100vh;
+    width: auto;
+    
+}
+
+    h1 {
+    font-size: 80px;
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+
+    border: white solid 2px;
+    background-color: white;
+    border-radius: 50px;
+    padding: 20px;
+    }
+ 
+    p {
+        font-size: 50px;
+        margin-top: 30px;
+
+        font-family: 'Open Sans', sans-serif;
+        font-style: italic;
+        font-weight: 700;
+    }
+
+    form {
+        margin: 50px;
+        padding: 10px; 
+        font-size: larger;
+
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        
+    }
+
+    #scoreNumber {
+        width: 25%;
+        height: 100px;
+        border-radius: 50px;
+        border-style: none;
+        box-shadow: 0.5px 5px 9px #232527;
+
+        font-size: 50px;
+    }
+
+    .submitNumber {
+        width: 10%;
+        height: 100px;
+        font-size: 40px;
+        cursor: pointer;
+        align-content: center;
+
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        border-radius: 50px;
+        border-style: none;
+       outline: 10px solid rgb(238, 184, 238);
+       box-shadow: 0.5px 10px 8px #232527;
+
+
+       display: flex;
+       gap: 20px;
+       position: absolute;
+       justify-content: center;
+       left: 55%;
+    }
+
+    @media (max-width: 768px) {
+        /* CSS rules for mobile screens */
+    
+        h1 {
+            font-size: 60px; /* Adjust font size for smaller screens */
+        }
+    
+        p {
+            font-size: 40px; /* Adjust font size for smaller screens */
+        }
+    
+        form {
+            margin: 20px; /* Adjust margin for smaller screens */
+        }
+    
+        #scoreNumber {
+            width: 50%; /* Adjust input width for smaller screens */
+            font-size: 40px; /* Adjust font size for smaller screens */
+        }
+    
+        .submitNumber {
+            width: 30%; /* Adjust button width for smaller screens */
+            font-size: 30px; /* Adjust font size for smaller screens */
+            left: 45%; /* Adjust button position for smaller screens */
+        }
+    }
+    
+    

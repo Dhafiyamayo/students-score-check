@@ -1,28 +1,42 @@
-//untuk meng-convert nilai siswa menjadi Grade/huruf
-function nilaiToHuruf(nilai) {
-    if (nilai >= 85 && nilai <= 100) {
-        return "A";
-    } else if (nilai >= 75 && nilai <= 84) {
-        return "B";
-    } else if (nilai >= 60 && nilai <= 74) {
-        return "C";
-    } else {
-        return "D";
+document.addEventListener("DOMContentLoaded", function() {
+
+    const form = document.getElementById("scoreForm");
+    
+
+
+    function processForm(event) {
+        event.preventDefault();
+
+        const score = parseFloat(document.getElementById("scoreNumber").value);
+
+
+        const grade = scoreToGrade(score);
+        const isGenap = bilangan(score);
+
+        const allResults = "Grade: " + grade + "<br>" + "Bilangan: " + (isGenap ? "Genap" : "Ganjil");
+
+        ganjilAtauGenap.innerHTML = allResults;
+
     }
-  }
-  
-  //untuk mengecek apakah nilai siswa tersebut bil.Ganjil atau Genap
-  function isGenap(nilai) {
-    return nilai % 2 === 0;
-  }
-  
-  //Nilai Siswa = 70
-  let nilai = 70;
-  console.log("Nilai angka: " + nilai);
-  
-  const nilaiHuruf = nilaiToHuruf(nilai);
-  console.log("Nilai huruf: " + nilaiHuruf);
-  
-  const bilangan = isGenap(nilai) ? "Genap" : "Ganjil";
-  console.log("Bilangan " + bilangan);
-  
+
+    form.addEventListener("submit", processForm);
+
+    function scoreToGrade(score) {
+        if (score >= 85 && score <= 100) {
+            return "A";
+        } else if (score >= 75 && score <= 84) {
+            return "B";
+        } else if (score >= 60 && score <= 74) {
+            return "C";
+        } else if (score >= 0 && score <=59) {
+            return "D";
+        } else {
+            return "Invalid Score";
+        }
+      }
+
+      function bilangan(score) {
+        return score % 2 === 0;
+    }
+    
+});
