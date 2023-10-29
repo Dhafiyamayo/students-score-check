@@ -18,6 +18,7 @@
 
     body {
         background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+        overflow: hidden;
 }
 
     main {
@@ -79,6 +80,7 @@
 
         font-family: 'Open Sans', sans-serif;
         font-weight: 400;
+        color: rgb(0, 0, 0);
         border-radius: 50px;
         border-style: none;
        outline: 10px solid rgb(238, 184, 238);
@@ -90,6 +92,10 @@
        position: absolute;
        justify-content: center;
        left: 55%;
+    }
+
+    .submitNumber:hover {
+        font-weight: 700;
     }
 
     @media (max-width: 768px) {
