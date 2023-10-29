@@ -23,15 +23,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function scoreToGrade(score) {
         if (score >= 85 && score <= 100) {
-            return "A";
+            return "A 🤩🔥";
         } else if (score >= 75 && score <= 84) {
-            return "B";
+            return "B 🥳";
         } else if (score >= 60 && score <= 74) {
-            return "C";
+            return "C 😅";
         } else if (score >= 0 && score <=59) {
-            return "D";
+            return "D 💀";
         } else {
-            return "Invalid Score";
+            return "Invalid Score 👊🏼";
         }
       }
 
@@ -40,3 +40,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     
 });
+
+
+
