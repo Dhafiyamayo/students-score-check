@@ -16,7 +16,7 @@
 
     body {
         background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
-        overflow: hidden;
+        overflow:auto;
 }
 
     main {
@@ -97,7 +97,7 @@
 
     @media (max-width: 768px) {
     * {
-        overflow: hidden;
+        overflow: auto;
     }
 
     h1 {
