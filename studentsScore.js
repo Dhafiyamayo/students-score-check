@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const form = document.getElementById("scoreForm");
     
 
-
     function processForm(event) {
         event.preventDefault();
 
@@ -13,9 +12,9 @@ document.addEventListener("DOMContentLoaded", function() {
         const grade = scoreToGrade(score);
         const isGenap = bilangan(score);
 
-        const allResults = "Grade: " + grade + "<br>" + "Bilangan: " + (isGenap ? "Genap" : "Ganjil");
+        const allResults = "Score: " + score + "<br>" + "Grade: " + grade + "<br>" + "Bilangan: " + (isGenap ? "Genap" : "Ganjil");
 
-        ganjilAtauGenap.innerHTML = allResults;
+        gradeResults.innerHTML = allResults;
 
     }
 
