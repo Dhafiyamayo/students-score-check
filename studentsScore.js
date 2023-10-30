@@ -1,3 +1,19 @@
+//ASSIGNMENT
+/* Buatlah sebuah code untuk menampilkan nilai angka siswa dan mengecek apakah nilai tersebut genap (Even) atau ganjil (Odd). 
+
+85 - 100 = A
+75 - 84 = B
+60 - 74 = C
+0 - 59 = D
+
+contoh: 
+Nilai Siswa: 80 
+
+Output: 
+Nilai angka: 80 
+Nilai huruf: B
+Bilangan Genap */
+
 document.addEventListener("DOMContentLoaded", function() {
 
     const form = document.getElementById("scoreForm");
