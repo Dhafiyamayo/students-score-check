@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const grade = scoreToGrade(score);
         const isGenap = bilangan(score);
 
-        const allResults = "Score: " + score + "<br>" + "Grade: " + grade + "<br>" + "Bilangan: " + (isGenap ? "Genap" : "Ganjil");
+        const allResults = "Score: " + score + "<br>" + "Grade: " + grade + "<br>" + "Number: " + (isGenap ? "Even" : "Odd");
 
         gradeResults.innerHTML = allResults;
 
